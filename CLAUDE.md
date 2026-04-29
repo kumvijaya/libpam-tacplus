@@ -47,7 +47,3 @@ Mirror twin: `VyOS-Networks/libpam-tacplus`. Canonical side is here. Note that t
 
 - The `libtac/` subdirectory is the TACACS+ protocol library and is shipped as a separately versioned `libtac2` Debian package — bump the soname carefully.
 - README is upstream's; VyOS-specific behaviour is encoded only by the build flags and patches applied here.
-
----
-
-This file is mirrored on Confluence: [`vyos/libpam-tacplus`](https://internal.confluence.vyos.com/wiki/spaces/VYOS/pages/817889495). The Confluence page also carries the per-repo audit data (settings, workflows, secret counts, hygiene) that complements this CLAUDE.md. Edit either side; resync via the documentation pipeline.

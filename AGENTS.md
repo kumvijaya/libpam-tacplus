@@ -14,7 +14,7 @@ PAM module providing TACACS+ authentication, authorization, and accounting for V
 ## Build / test / run
 
 ```sh
-./auto.sh                 # autoreconf (generates ./configure)
+./auto.sh                 # autoreconf (generates./configure)
 ./configure
 make
 dpkg-buildpackage -us -uc

@@ -32,17 +32,13 @@ dpkg-buildpackage -us -uc
 
 ## Cross-repo context
 
-Authentication building block of the VyOS image. Provides the `libtac` library that `libnss-tacplus` links against, and the PAM module that `libtacplus-map` complements for `/etc/passwd`-less TACACS+ logins. Built via `VyOS-Networks/vyos-build-packages`; consumed by `vyos/vyos-build`.
+Authentication building block of the VyOS image. Provides the `libtac` library that `libnss-tacplus` links against, and the PAM module that `libtacplus-map` complements for `/etc/passwd`-less TACACS+ logins. Built via the internal build-packages workflow; consumed by `vyos/vyos-build`.
 
 ## Conventions
 
 - Default branch `master`. LTS branches when needed.
 - Commit / PR title format: `component: T12345: description` (Phorge task ID at https://vyos.dev).
 - Treat as upstream-vendored: minimise diffs against the upstream `pam_tacplus`.
-
-## Mirror relationship
-
-Mirror twin: `VyOS-Networks/libpam-tacplus`. Canonical side is here. Note that the VyOS-Networks side has its `git-actions` branch configured as default (audit observation §8.2 of relations doc) — that's not the canonical state.
 
 ## Notes for future contributors
 
